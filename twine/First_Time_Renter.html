@@ -20,7 +20,7 @@
 
 [[Click here to begin-&gt;Morning]]
 </tw-passagedata><tw-passagedata pid="4" name="Morning" tags="" position="600,500" size="100,100">(set: $day to $day + 1) (if: $wakeUpExhausted is true) [(set: $exhaustion to $exhaustion - 1)] (else:) [(set: $exhaustion to 0)] Day $day
-You have $$savings saved.
+You have $$savings saved. (out of $110)
 Your exhaustion is at level $exhaustion.
 (set: $breakfast to (random: 0,4) + 5)
 Starting the day, you notice that breakfast would cost you $$breakfast.
@@ -28,12 +28,12 @@ Buy breakfast?
 [[Yes-&gt;Accept breakfast]]
 (if: $exhaustion &lt;= 2)[[[No-&gt;Refuse breakfast]]] (elseif: $exhaustion &gt; 2) [No(click-replace: &quot;No&quot;)[You absolutely need to eat right now.]]</tw-passagedata><tw-passagedata pid="5" name="Prologue 2" tags="" position="600,100" size="100,100">The excitement of finally renting an apartment eventually gave way to the stresses of actually living in and maintaining the damn thing. So many things you were not used to - rent, bills, groceries - were now your responsibility. Those friends you share the apartment with? You&#39;re pestering them to Venmo you their share of the electricity bill so you don&#39;t get charged a late fee. That kitchen with a stove and dishwasher, where you were excited to cook for everyone? You hardly use it because everyone leaves their dishes in the sink and nobody is willing to clean up after the others and load/unload the dishwasher. The basement, where the only public bathroom is? It stinks of sewage whenever it rains and occasionally floods, and the landlord has done nothing to fix either of these issues despite you and the others reminding him of it multiple times. 
 
-[[In short; things aren&#39;t going as well as you had anticipated.-&gt;Prologue 3]]</tw-passagedata><tw-passagedata pid="6" name="Objective" tags="" position="1000,100" size="100,100">You remember how cold January was. Often the nightly lows would drop into the teens, sometimes even the single digits. Everyone had their heaters on throughout the night, and it all added up here.$111 is almost 3 times the amount you&#39;re used to paying each month. This isn&#39;t an amount you can just write off and forget about; you&#39;re going to have to make compromises. And with your usual spending habits combined with your workload and schedule, you know that you are in for a rough few weeks.
+[[In short; things aren&#39;t going as well as you had anticipated.-&gt;Prologue 3]]</tw-passagedata><tw-passagedata pid="6" name="Objective" tags="" position="1000,100" size="100,100">You remember how cold January was. Often the nightly lows would drop into the teens, sometimes even the single digits. Everyone had their heaters on throughout the night, and it all added up here. $110 is almost 3 times the amount you&#39;re used to paying each month. This isn&#39;t an amount you can just write off and forget about; you&#39;re going to have to make compromises. And with your usual spending habits combined with your workload and schedule, you know that you are in for a rough few weeks.
 
-[[Your goal is clear: save $111 throughout the month of February and maintain your productivity without exhausting yourself too much.-&gt;Morning]]
+[[Your goal is clear: save $110 throughout the month of February and maintain your productivity without exhausting yourself too much.-&gt;Morning]]
 
 [[Review how to play?-&gt;How To Play]]</tw-passagedata><tw-passagedata pid="7" name="Afternoon" tags="" position="900,500" size="100,100">(set: $exhaustion to $exhaustion + 1) Day $day
-You have $$savings saved.
+You have $$savings saved. (out of $110)
 Your exhaustion is at level $exhaustion.
 (set: $lunch to (random: 0,1) + 10)
 With your morning classes finished, you think about going out to get your usual lunch, which would cost you $$lunch.
@@ -64,7 +64,7 @@ Buy lunch?
 (if: _upcomingExhaustion &lt; 1) [You&#39;re feeling pretty good.] (else-if: _upcomingExhaustion is 1) [Your stomach rumbles a bit, but it&#39;s not enough to be distracting.] (else-if: _upcomingExhaustion is 2) [Your stomach growls. You should probably get food soon.] (else-if: _upcomingExhaustion is 3) [Your stomach is empty to the point of hurting. You need to eat.]
 
 [[Continue-&gt;Evening]]</tw-passagedata><tw-passagedata pid="13" name="Evening" tags="" position="1200,500" size="100,100">(set: $exhaustion to $exhaustion + 1) Day $day
-You have $$savings saved.
+You have $$savings saved. (out of $110)
 Your exhaustion is at level $exhaustion.
 (set: $dinner to (random: 0,8) + 12)
 The day has come to an end, and you have the rest of the evening to spend as you see fit. You think about ordering delivery for dinner, which would cost you $$dinner. Of course, you could always walk out and get something yourself, but do your really want to go down that hill, walk 15 minutes down the street, maybe catch a bus, and bring your food back up the hill? You&#39;d save about $5, but that&#39;s a long walk, and time that could be spent working.
