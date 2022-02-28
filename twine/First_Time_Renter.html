@@ -105,11 +105,11 @@ What do you do?
 (set: $diff to 110-$savings)
 (if: $diff &lt;= 0)[This covers the entirety of your portion of the electric bill.] (else:)[This is $$diff less than your goal of $110. This $$diff will have to be paid out of pocket.]
 
-During the week, you had a productivity of %$totalProductivity.
+During the week, you had a productivity of $totalProductivity%.
 (if: $totalProductivity &gt;= 66)[You got a good portion of your work done and are not lagging behind in your classes. You will be able to meet all of our deadlines as expected.] (elseif: $totalProductivity &gt;= 33)[You got a fair amount of work done, but you still have some catching up to do. Your upcoming deadlines feel a bit more daunting now, but its nothing a couple of all-nighters can&#39;t take care of.] (else:)[You got hardly anything done and are now falling behind. With deadlines looming, anxiety sets in as you wonder how you will ever be able to make up all that lost time.]
 
 Are you satisfied with these results? Is this setback something you can recover from?
-[[Perhaps you could have done things differently...-&gt;Start Page]]</tw-passagedata><tw-passagedata pid="17" name="Work Results" tags="" position="1675,500" size="100,100">With that out of the way, you get started on your work.(if: $canWork is true)[ With your level of exhaustion, you were able to get (print: $productivity&#39;s ($day))% of your nightly work done, bringing your total productivity to %$totalProductivity.] (elseif: $canWork is false)[ Unfortunately, you did not have the energy to focus, and got nothing done. You got 0% of your nightly work done, bringing your total productivity to %$totalProductivity.]
+[[Perhaps you could have done things differently...-&gt;Start Page]]</tw-passagedata><tw-passagedata pid="17" name="Work Results" tags="" position="1675,500" size="100,100">With that out of the way, you get started on your work.(if: $canWork is true)[ With your level of exhaustion, you were able to get (print: $productivity&#39;s ($day))% of your nightly work done, bringing your total productivity to $totalProductivity%.] (elseif: $canWork is false)[ Unfortunately, you did not have the energy to focus, and got nothing done. You got 0% of your nightly work done, bringing your total productivity to $totalProductivity%.]
 
 (if: $day is 7)[[[It&#39;s been a week-&gt;Final Results]]] (else:)[[[On to the next day-&gt;Morning]]]
 
